@@ -509,6 +509,26 @@ img {
 @media (max-width: 768px) {
   .nav {
     width: 100%;
+    padding: 20px 20px 35px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -538,7 +558,7 @@ img {
 
 @media (max-width: 1024px) {
   .nav__logo-name {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -548,6 +568,12 @@ img {
   line-height: 15px;
   letter-spacing: -0.01em;
   color: #838383;
+}
+
+@media (max-width: 1024px) {
+  .nav__logo-version {
+    font-size: 7px;
+  }
 }
 
 .nav__svg-stroke {
@@ -582,6 +608,13 @@ img {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
   }
 }
 
@@ -619,6 +652,12 @@ img {
 @media (max-width: 1024px) {
   .nav__item-link {
     width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__item-link {
+    width: 170px;
   }
 }
 
@@ -702,6 +741,21 @@ img {
 .table__section {
   padding-top: 41px;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .table__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .table__hello-img {
@@ -1073,6 +1127,15 @@ img {
   .table__top {
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media (max-width: 480px) {
+  .table__terms > td {
+    padding: 0 50px;
+  }
+  .table__pagination {
+    gap: 5px;
   }
 }
 /*# sourceMappingURL=main.css.map */
